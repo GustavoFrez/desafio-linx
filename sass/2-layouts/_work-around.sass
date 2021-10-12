@@ -1,0 +1,18 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+@use 'layouts-mixins'
+
+.work-around
+    display: none
+    width: 100%
+   
+    .header-task-mobile
+        color: variables.$primary-color
+        font-size: 15px
+        line-height: 22px
+        text-align: center
+        padding: 50px 50px 0 50px
+
+
+    @include base-mixins.mobile
+        display: inline-block

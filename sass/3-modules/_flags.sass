@@ -1,0 +1,27 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+
+
+.flag-cards
+    width: 102px
+    height: 29px
+    border-radius: 0px 5px 5px 0px
+    z-index: 2
+    position: absolute
+    text-align: center
+    line-height: 25px
+    margin-top: 25px
+    margin-left: -10px
+
+    p
+        color: variables.$text-light-color
+        font-size: 12px
+        font-weight: 600
+
+    &-purple
+        background-color: variables.$primary-color
+
+    &-red
+        background-color: variables.$third-color
+
+        

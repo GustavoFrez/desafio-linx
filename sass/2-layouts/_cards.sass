@@ -1,0 +1,138 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+@use 'layouts-mixins'
+
+.container-cards
+    width: 100%
+    margin-top: 60px
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .container-hide-card
+        @include base-mixins.cards
+            display: none
+
+
+    .container-cards-itens
+        max-width: 1080px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+
+        @include base-mixins.tablet
+            margin: 0 20px
+     
+        .card-task
+            width: 253px
+            height: 360px
+            border: solid 1px #000
+            border-radius: 14px
+            margin: 0px 5px 30px 5px
+
+            @include base-mixins.cards
+                width: 310px
+                height: 210px
+                display: flex
+               
+            .card-task-image
+                img
+                    margin: 17px 17px 0px 17px
+
+                    @include base-mixins.cards
+                        margin: 15px 0px 15px 8px
+                        width: 135px
+                        height: 180px
+           
+            .card-box-text 
+
+                @include base-mixins.cards
+                    width: 200px
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-around
+
+            h3
+                font-size: 14px
+                font-weight: 800
+                line-height: 20px
+                color: variables.$text-color
+                margin: 5px 16px
+
+                @include base-mixins.cards
+                    margin-top: -10px 
+                
+            .card-task-clock
+                display: none
+                width: 100%
+
+                @include base-mixins.cards
+                    display: flex
+                    justify-content: flex-end
+                    width: 168px
+                    margin-top: 10px 
+                    margin-left: -10px
+                            
+            .card-task-description
+                height: 55px
+                margin: 10px 16px 0 16px
+                font-size: 12px
+                color: variables.$black
+
+                @include base-mixins.cards
+                    height: 55px
+                    margin: 0px 16px
+                    font-size: 10px
+            
+            .card-task-deadline
+                font-size: 12px
+                font-weight: 800
+                margin: 0 16px
+                color: variables.$black
+                
+                span
+                    color: variables.$third-color
+                    font-size: 18px
+                    font-weight: 700
+                
+                .card-task-warning
+                    color: variables.$third-color
+                    font-size: 10px
+                    font-weight: 400
+                    margin-left: 5px
+
+                    @include base-mixins.cards
+                        display: none
+
+        .card-task-date
+            font-size: 12px
+            margin: 5px 16px
+            padding-bottom: 10px
+            color: variables.$text-color
+
+            @include base-mixins.cards
+                font-size: 9px
+    
+        .card-task-btn
+            height: 466px
+
+            @include base-mixins.tablet
+                height: 360px
+            
+            @include base-mixins.cards
+                height: 210px
+            
+        .box-task-btn
+            width: 100%
+            text-align: center
+    
+    .hide-card 
+        @include base-mixins.cards
+            display: none
+
+
+
+.card-box-view
+    width: 100%
+    text-align: center
+    margin-bottom: 80px

@@ -1,0 +1,82 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+
+.btn
+    background-color: variables.$second-color
+    color: variables.$text-light-color
+    border-radius: 8px
+    cursor: pointer
+    box-shadow: 0 0 0 0
+    outline: none
+    width: 218px
+    height: 40px
+    font-size: 16px
+    font-weight: 700
+    line-height: 20px
+    border: none
+    
+    &-search
+        width: 70px
+        height: 35px
+        font-size: 14px
+        font-weight: 600
+        margin-left: -20px
+        
+    &-complete
+        background-color: variables.$primary-color
+
+        @include base-mixins.tablet
+            display: none
+                                
+        &:hover
+            background: transparent
+            border: variables.$primary-color solid 2px
+            color: variables.$primary-color
+          
+
+    &-change
+        background-color: variables.$third-color
+        margin-top: 10px
+        margin-left: 15px
+        display: flex
+        justify-content: center
+        align-items: center
+     
+        .clock-btn
+           margin-right: 8px
+
+        @include base-mixins.tablet
+            display: none
+             
+        &:hover
+            background: transparent
+            border: variables.$third-color solid 2px
+            color: variables.$third-color
+               
+    &-view
+        width: 197px
+        height: 38px
+        font-weight: 600
+        text-transform: uppercase
+
+        @include base-mixins.tablet
+            margin-top: 30px
+
+    &-register
+        width: 100px
+        height: 34px
+        font-size: 14px
+        font-weight: 600
+    
+.btn-mobile
+    width: 135px
+    height: 30px
+    background: transparent
+    border: variables.$primary-color solid 1px
+    color: variables.$primary-color
+    margin-left: 16px
+    display: none
+
+    @include base-mixins.cards
+        display: inline-block
+    

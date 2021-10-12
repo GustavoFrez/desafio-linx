@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarefas a fazer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <header class="header-task">
+      <h1>Tarefas a fazer</h1>
+      <p class="header-task-desktop">
+        Adicione e complete tarefas para organizar melhor a sua semana. :)
+      </p>
+    </header>
+    <main>
+      <div class="work-around">
+        <p class="header-task-mobile">
+          Adicione e complete tarefas para <br />
+          organizar melhor a sua semana. :)
+        </p>
+      </div>
+
+      <section class="container-organization">
+        <div class="container-organization-itens">
+          <div class="search-task">
+            <input
+              class="input input-task"
+              type="text"
+              placeholder="Busque tarefas"
+            />
+            <button class="btn btn-search">Buscar</button>
+          </div>
+          <div class="organize-task">
+            <p>Organizar por:</p>
+            <div class="select">
+              <select name="choose">
+                <option value="deadline">Prazo</option>
+                <option value="date">Data</option>
+                <option value="task">Tarefa</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container-cards">
+          <div class="container-cards-itens">
+            <div class="card-task card-image">
+              <div class="flag-cards flag-cards-purple">
+                <p>Prazo curto!</p>
+              </div>
+
+              <div class="card-task-image">
+                <img src="img/imagem.png" alt="Tarefa" />
+              </div>
+
+              <div class="card-box-text">
+                <div class="card-task-clock">
+                  <img class="clock" src="img/clock.png" alt="Tarefa" />
+                </div>
+                <h3>Nome da tarefa</h3>
+                <p class="card-task-description">
+                  Descrição da tarefa, o que deve ser feito e muitas informações
+                  que explicam melhor do que se trata.
+                </p>
+                <p class="card-task-deadline">Prazo: <span>00/00</span></p>
+                <button class="btn btn-mobile hide-btn">Concluir</button>
+                <p class="card-task-date">Data de inclusão: há 2 semanas</p>
+              </div>
+            </div>
+
+            <div class="card-task card-image">
+              <div class="card-task-image">
+                <img src="img/imagem.png" alt="Tarefa" />
+              </div>
+
+              <div class="card-box-text">
+                <div class="card-task-clock">
+                  <img class="clock" src="img/clock.png" alt="Tarefa" />
+                </div>
+                <h3>Nome da tarefa</h3>
+                <p class="card-task-description">
+                  Descrição da tarefa, o que deve ser feito.
+                </p>
+                <p class="card-task-deadline">Prazo: <span>00/00</span></p>
+                <button class="btn btn-mobile hide-btn">Concluir</button>
+                <p class="card-task-date">Data de inclusão: há 2 semanas</p>
+              </div>
+            </div>
+
+            <div class="card-task card-image">
+              <div class="card-task-image">
+                <img src="img/imagem.png" alt="Tarefa" />
+              </div>
+
+              <div class="card-box-text">
+                <div class="card-task-clock">
+                  <img class="clock" src="img/clock.png" alt="Tarefa" />
+                </div>
+                <h3>Nome da tarefa</h3>
+                <p class="card-task-description">
+                  Descrição da tarefa, o que deve ser feito e muitas informações
+                  que explicam melhor do que se trata.
+                </p>
+                <p class="card-task-deadline">Prazo: <span>00/00</span></p>
+                <button class="btn btn-mobile hide-btn">Concluir</button>
+                <p class="card-task-date">Data de inclusão: há 2 semanas</p>
+              </div>
+            </div>
+
+            <div class="card-task card-image">
+              <div class="card-task-image">
+                <img src="img/imagem.png" alt="Tarefa" />
+              </div>
+
+              <div class="card-box-text">
+                <div class="card-task-clock">
+                  <img class="clock" src="img/clock.png" alt="Tarefa" />
+                </div>
+                <h3>Nome da tarefa</h3>
+                <p class="card-task-description">
+                  Descrição da tarefa, o que deve ser feito e muitas informações
+                  que explicam melhor do que se trata.
+                </p>
+
+                <button class="btn btn-mobile hide-btn">Concluir</button>
+                <p class="card-task-date">Data de inclusão: há 2 semanas</p>
+              </div>
+            </div>
+
+            <div class="container-hide-card">
+              <div class="card-task card-task-btn card-image">
+                <div class="card-task-image">
+                  <img src="img/imagem.png" alt="Tarefa" />
+                </div>
+
+                <div class="card-box-text">
+                  <div class="card-task-clock">
+                    <img class="clock" src="img/clock.png" alt="Tarefa" />
+                  </div>
+                  <h3>Nome da tarefa</h3>
+                  <p class="card-task-description">
+                    Descrição da tarefa, o que deve ser feito e muitas
+                    informações que explicam melhor do que se trata.
+                  </p>
+                  <p class="card-task-deadline">Prazo: <span>00/00</span></p>
+                  <button class="btn btn-mobile hide-btn">Concluir</button>
+                  <p class="card-task-date">Data de inclusão: há 2 semanas</p>
+                  <div class="box-task-btn">
+                    <button class="btn btn-complete">Concluir</button>
+                    <button class="btn btn-change">
+                      <img
+                        class="clock-btn"
+                        src="img/clock-btn.png"
+                        alt="Relogio"
+                      />
+                      Alterar Prazo
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-hide-card">
+              <div class="card-task card-image hide-card">
+                <div class="card-task-image">
+                  <img src="img/imagem.png" alt="Tarefa" />
+                </div>
+
+                <div class="card-box-text">
+                  <div class="card-task-clock">
+                    <img class="clock" src="img/clock.png" alt="Tarefa" />
+                  </div>
+                  <h3>Nome da tarefa</h3>
+                  <p class="card-task-description">
+                    Descrição da tarefa, o que deve ser feito.
+                  </p>
+                  <p class="card-task-deadline">Prazo: <span>00/00</span></p>
+                  <button class="btn btn-mobile hide-btn">Concluir</button>
+                  <p class="card-task-date">Data de inclusão: há 2 semanas</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-hide-card">
+              <div class="card-task card-image hide-card">
+                <div class="flag-cards flag-cards-red">
+                  <p>Atrasado :(</p>
+                </div>
+
+                <div class="card-task-image">
+                  <img src="img/imagem.png" alt="Tarefa" />
+                </div>
+
+                <div class="card-box-text">
+                  <div class="card-task-clock">
+                    <img class="clock" src="img/clock.png" alt="Tarefa" />
+                  </div>
+                  <h3>Nome da tarefa</h3>
+                  <p class="card-task-description">
+                    Descrição da tarefa, o que deve ser feito.
+                  </p>
+                  <p class="card-task-deadline">
+                    Prazo: <span>00/00</span>
+                    <span class="card-task-warning">Atraso, 3 dias</span>
+                  </p>
+                  <button class="btn btn-mobile hide-btn">Concluir</button>
+                  <p class="card-task-date">Data de inclusão: há 2 semanas</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-hide-card">
+              <div class="card-task card-image hide-card">
+                <div class="card-task-image">
+                  <img src="img/imagem.png" alt="Tarefa" />
+                </div>
+
+                <div class="card-box-text">
+                  <div class="card-task-clock">
+                    <img class="clock" src="img/clock.png" alt="Tarefa" />
+                  </div>
+                  <h3>Nome da tarefa</h3>
+                  <p class="card-task-description">
+                    Descrição da tarefa, o que deve ser feito e muitas
+                    informações que explicam melhor do que se trata.
+                  </p>
+
+                  <button class="btn btn-mobile hide-btn">Concluir</button>
+                  <p class="card-task-date">Data de inclusão: há 2 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-box-view">
+          <button class="btn btn-view">Ver mais +</button>
+        </div>
+      </section>
+    </main>
+
+    <section>
+      <div class="register">
+        <div class="register-container">
+          <h4>
+            Quer receber dicas para organizar melhor a sua rotina? Cadastre-se!
+          </h4>
+
+          <div class="register-box">
+            <div>
+              <label for="">nome</label><br />
+              <input
+                class="input input-register-name"
+                type="text"
+                placeholder="Digite seu nome"
+              />
+            </div>
+
+            <div>
+              <label for="">e-mail</label><br />
+              <input
+                class="input input-register-email"
+                type="text"
+                placeholder="Digite seu e-mail"
+              />
+              <button class="btn btn-register">Cadastrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="about-linx">
+        <div class="about-linx-container">
+          <div class="about-linx-logo">
+            <img src="img/logo-linx.png" alt="Logo Linx" />
+          </div>
+          <div class="about-linx-text">
+            <p>
+              A Linx é uma empresa brasileira especialista em tecnologia para o
+              varejo. Líder no mercado de software de gestão, com 45,6% de
+              market share do mercado varejista, conforme atesta o IDC.
+            </p>
+
+            <p>
+              Toda a expertise da Linx na jornada de compra é transformada em
+              insights fundamentais para atingir o que os varejistas mais
+              esperam: fidelizar seus consumidores e atingir resultados
+              concretos e relevantes.
+            </p>
+
+            <p>
+              Com capital aberto na B3 desde 2013, a Linx também se tornou a
+              primeira empresa brasileira de software com capital aberto na
+              NYSE, em 2019. A empresa possui mais de 3,5 mil colaboradores
+              distribuídos entre sua sede em São Paulo, 15 filiais pelo Brasil e
+              5 países da América. Para saber mais, acesse linx.com.br/imprensa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-linx">
+        <p>Testando suas habilidades em HTML e CSS.</p>
+        <p>Linx Impulse 2021</p>
+        <p>Teste ficcional!</p>
+      </div>
+    </footer>
+  </body>
+</html>

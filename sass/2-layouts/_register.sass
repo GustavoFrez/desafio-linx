@@ -1,0 +1,49 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+@use 'layouts-mixins'
+
+.register
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+  
+    &-container
+        background-color: variables.$bg-grey
+        width: 876px
+        height: 122px
+        border-radius: 8px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin: 0 20px
+
+        @include base-mixins.tablet
+            display: none
+
+        @include base-mixins.mobile
+            display: none
+                          
+        h4
+            color: variables.$second-color
+            font-size: 14px
+            font-weight: 700
+            letter-spacing: 1px
+            padding-left: 28px
+        
+    .register-box
+        display: flex
+        flex-direction: row
+        justify-content: space-evenly
+        flex-wrap: wrap
+            
+        label
+            font-size: 12px
+            color: variables.$ligth-grey
+            line-height: 16px
+            margin-left: 3px
+            margin-bottom: 52px
+
+
+        .btn-register
+            margin-left: 5px

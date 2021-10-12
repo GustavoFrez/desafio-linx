@@ -1,0 +1,32 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+
+.input
+    height: 35px
+    padding-left: 10px
+                
+    &:focus
+        box-shadow: 0 0 0 0
+   
+    &::placeholder
+        color: variables.$ligth-grey
+        font-size: 12px
+        padding-left: 15px
+        margin-right: 50px
+        
+    &-task
+        width: 275px
+        border-radius: 8px 0 0 8px
+        margin-left: 10px
+
+        @include base-mixins.smart
+            width: 230px
+            margin-left: 0px
+        
+    &-register-name
+        width: 335px
+        border-radius: 8px
+
+    &-register-email
+        width: 348px
+        border-radius: 8px

@@ -1,0 +1,87 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+@use 'layouts-mixins'
+
+.container-organization
+    width: 100%
+    margin-top: 120px
+    display: flex
+    flex-direction: row
+    justify-content: center
+
+    @include base-mixins.mobile
+        margin-top: 50px
+
+    .container-organization-itens
+        width: 1080px
+        height: 85px
+        background-color: variables.$yellow
+        border-radius: 8px
+        margin: 0 20px
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        flex-wrap: wrap
+
+        @include base-mixins.mobile
+            height: 146px
+            display: flex
+            flex-direction: column
+
+                     
+
+        .organize-task
+            display: flex
+            align-items: center
+
+            p
+                color: variables.$text-light-color
+                fonte-size: 12px
+                margin: 0px 20px
+                font-weight: 500
+            
+            @include base-mixins.smart
+                font-size: 12px
+                margin: 0px                    
+
+            select
+                -webkit-appearance: none
+                -moz-appearance: none
+                -ms-appearance: none
+                appearance: none
+                outline: 0
+                box-shadow: none
+                border: 0 !important
+                background: variables.$text-light-color
+                background-image: none
+                flex: 1
+                color: variables.$text-color
+                cursor: pointer
+                font-size: 14px
+                padding: 0 .9em
+
+            select::-ms-expand
+                display: none
+
+            .select
+                position: relative
+                display: flex
+                width: 195px
+                height: 35px
+                line-height: 2.25
+                overflow: hidden
+                border-radius: 8px
+                color: variables.$text-color
+                background: variables.$text-light-color
+                margin-right: 10px
+
+            .select::after
+                content: '\25BC'
+                position: absolute
+                top: 0
+                right: 0
+                padding: 0 1em
+                background: variables.$text-light-color
+                cursor: pointer
+                pointer-events: none
+                transition: .25s all ease
