@@ -36,7 +36,7 @@ Crie uma pasta em local de preferência, abra essa pasta e clique dentro com o b
 Dentro do GIT BASH, digite na sua linha de comando:
 
 ```sh
-  $ git clone https://github.com/GustavoFrez/desafio-linx
+  git clone https://github.com/GustavoFrez/desafio-linx
 ```
 
 Abra a pasta que clonou dentro de uma IDE, optamos por usar o VScode neste exemplo, caso você não tenha o VScode instalado em sua máquina você pode efetuar o download por aqui --> https://code.visualstudio.com/download
@@ -50,13 +50,13 @@ através do terminal de sua preferência.
 Bastar copiar o comando abaixo:
 
 ```sh
-  $ npm install -g sass
+  npm install -g sass
 ```
 
 Para saber se o Sass está funcionando em sua máquina digite no terminal
 
 ```sh
-  $ sass --version
+  sass --version
 ```
 
 ![Sass](https://i.ibb.co/LkR5g02/sass-version.png)
@@ -71,7 +71,7 @@ Por fim basta você buildar do projeto digitando o seguinte comando:
 <br><br>
 
 ```sh
-  $ sass --watch sass/app.sass:css/app.css
+  sass --watch sass/app.sass:css/app.css
 ```
 <br>
 E pronto agora você já pode desenvolver!
