@@ -67,13 +67,14 @@ Caso aconteça de aparecer o erro de script desabilitado basta seguir o passo a 
 
 Por fim basta você buildar do projeto digitando o seguinte comando:
 
-![BuildSass](https://i.ibb.co/Pwxh6fn/build-sass-certo.png)
-<br><br>
-
 ```sh
   sass --watch sass/app.sass:css/app.css
 ```
 <br>
+
+![BuildSass](https://i.ibb.co/Pwxh6fn/build-sass-certo.png)
+<br><br>
+
 E pronto agora você já pode desenvolver!
 <br><br>
 
