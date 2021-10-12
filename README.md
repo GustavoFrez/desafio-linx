@@ -77,6 +77,7 @@ Por fim basta você buildar do projeto digitando o seguinte comando:
 E pronto agora você já pode desenvolver!
 <br><br>
 
+Desenvolvido com :heart: por Gustavo Frez
 
 Observações do desafio:
 
@@ -84,4 +85,4 @@ Observações do desafio:
 
 - Obrigado pela oportunidade além de um desafio foi um grande aprendizado para mim.
 
-Desenvolvido com :heart: por Gustavo Frez
+
